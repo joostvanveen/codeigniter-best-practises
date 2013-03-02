@@ -1,0 +1,118 @@
+/* It would be better to reference these Google webfonts directly from your html file */
+@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body {
+  font-family: 'Droid Sans'; font-size: 14px; line-height: 1.4em;
+}
+
+body {
+	margin-top: 20px; background: #f8f8f8;
+}
+
+input,textarea {
+	font-family: sans-serif; font-size: 14px;
+}
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+}
+
+h2,h3,h4 {
+	color: #111; margin: 0; padding: 0;
+}
+
+.container {
+	width: 720px; margin: auto; background: #fff; border-radius: 5px; padding: 4px; color: #333; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+header {
+	border-radius: 3px; padding: 20px; height: 40px;
+}
+
+header,header a {
+	color: #fff; text-decoration: none;
+}
+
+header,header a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: 'Molle'; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); float: left; width: 220px; margin: 12px 0 0 0; padding: 0;
+}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+ul.nav {
+	list-style-type: none;
+}
+
+ul.nav li {
+	float: left;
+}
+
+ul.nav li a {
+	display: block; margin-right: 10px;
+}
+
+.main {
+	clear: both; border-radius: 3px; margin-top: 10px; padding: 20px;
+}
+
+h3 {
+	border-radius: 3px; color: #fff; padding: 5px 10px; margin-top: 20px;
+}
+
+section {
+	clear: both;
+}
+
+.answers article {
+	clear: both;
+}
+
+.answers p {
+	float: right; width: 460px; padding-left: 20px; border-left: 1px solid #eee;
+}
+
+.answers p.name {
+	float: left; width: 170px; padding-left: 0; border: none;
+}
+
+form {
+	margin-top: 20px;
+}
+
+label {
+	display: block; margin-top: 5px;
+}
+
+input[type="text"],textarea {
+	height: 26px; line-height: 26px; width: 300px; border-radius: 3px; border: 1px solid #ccc; padding: 0 5px;
+}
+
+textarea {
+	height: 100px; line-height: 1.1em; width: 300px; padding: 5px 5px;
+}
+
+input[type="submit"] {
+	display: block; margin-top: 10px; padding: 0 10px; height: 30px; line-height: 30px; color: #fff; border: none; border-radius: 3px;
+}
+
+.highlight {
+	background: rgb(149, 149, 149); background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk1OTU5NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iIzBkMGQwZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iIzBhMGEwYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iIzRlNGU0ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg3JSIgc3RvcC1jb2xvcj0iIzM4MzgzOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100% );
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(149, 149, 149, 1) ), color-stop(46%, rgba(13, 13, 13, 1) ), color-stop(50%, rgba(1, 1, 1, 1) ), color-stop(53%, rgba(10, 10, 10, 1) ), color-stop(76%, rgba(78, 78, 78, 1) ), color-stop(87%, rgba(56, 56, 56, 1) ), color-stop(100%, rgba(27, 27, 27, 1) ) );
+	background: -webkit-linear-gradient(top, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100% );
+	background: -o-linear-gradient(top, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100% );
+	background: -ms-linear-gradient(top, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100% );
+	background: linear-gradient(to bottom, rgba(149, 149, 149, 1) 0%, rgba(13, 13, 13, 1) 46%, rgba(1, 1, 1, 1) 50%, rgba(10, 10, 10, 1) 53%, rgba(78, 78, 78, 1) 76%, rgba(56, 56, 56, 1) 87%, rgba(27, 27, 27, 1) 100% ); filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#959595', endColorstr = '#1b1b1b', GradientType = 0 );
+}
+
+footer {
+	clear: both; padding: 20px; text-align: right;
+}
