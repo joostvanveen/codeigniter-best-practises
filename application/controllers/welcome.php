@@ -1,7 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+use Netcarver\Textile;
+
 class Welcome extends CI_Controller {
 
+    public function __construct ()
+    {
+        parent::__construct();
+        $this->ion_auth->login('admin@admin.com', 'password');
+        
+        if ($this->ion_auth->logged_in() == false) {
+            redirect('user/login');
+        }
+    }
+    
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,6 +32,13 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('welcome_message');
+		$parser = new Textile\Parser();
+		
+		$string = 'h1. Welcome' . PHP_EOL . PHP_EOL;
+		$string .= '* List item' . PHP_EOL;
+		$string .= '* Another list item' . PHP_EOL;
+		
+		echo $parser->textileThis($string);
 	}
 }
 

@@ -1,0 +1,49 @@
+{
+    "hash": "4a8105c6bb06b1e00e32a89255faaa15",
+    "packages": [
+        {
+            "name": "netcarver/textile",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netcarver/textile.git",
+                "reference": "725143be6e147dfc1e21e1c912f377084bb8c57a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netcarver/textile/zipball/725143be6e147dfc1e21e1c912f377084bb8c57a",
+                "reference": "725143be6e147dfc1e21e1c912f377084bb8c57a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-01-27 23:52:35",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Netcarver\\Textile": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A lightweight markup language that takes (almost) plaintext and converts it into well formed HTML.",
+            "homepage": "https://github.com/netcarver/textile"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "netcarver/textile": 20
+    }
+}
