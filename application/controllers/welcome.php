@@ -2,16 +2,11 @@
 
 use Netcarver\Textile;
 
-class Welcome extends CI_Controller {
+class Welcome extends MY_Controller {
 
     public function __construct ()
     {
         parent::__construct();
-        $this->ion_auth->login('admin@admin.com', 'password');
-        
-        if ($this->ion_auth->logged_in() == false) {
-            redirect('user/login');
-        }
     }
     
 	/**
@@ -33,7 +28,7 @@ class Welcome extends CI_Controller {
 	{
 	    
 	    
-	    $this->output->enable_profiler(ENVIRONMENT == 'development');	    
+	    	    
 	    $data = array('subview' => 'homepage');
 	    $this->load->view('layouts/layout', $data);
 	}

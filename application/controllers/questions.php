@@ -1,5 +1,5 @@
 <?php
-class Questions extends CI_Controller {
+class Questions extends MY_Controller {
 
     public function __construct(){
         parent::__construct();

@@ -1,13 +1,8 @@
 <?php
-class Users extends CI_Controller {
+class Users extends MY_Controller {
 
     public function __construct(){
         parent::__construct();
-        $this->ion_auth->login('admin@admin.com', 'password');
-        
-        if ($this->ion_auth->logged_in() == false) {
-            redirect('user/login');
-        }
     }
 
     /**
@@ -22,6 +17,10 @@ class Users extends CI_Controller {
                 //TODO  Redirect
                 //TODO Error message 
         //TODO  Set subview & Load layout
+        
+        $this->load->model('question_model');
+        $questions = $this->question_model->with('answers')->get(1);
+        dump($questions);
     }
     public function register ()
     {
