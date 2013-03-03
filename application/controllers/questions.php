@@ -20,7 +20,12 @@ class Questions extends MY_Controller {
         $this->data['question'] = $this->question_model->with('user')->get($id);
         $this->db->where('questions_id', $id);
         $this->data['answers'] = $this->answer_model->with('user')->get_all();
-
+        
+        // Save the answer
+        if (count($_POST)) {
+            $this->answer_model->insert();
+        }
+        
         // Load view
         $this->load_view('questions/detail');
     }

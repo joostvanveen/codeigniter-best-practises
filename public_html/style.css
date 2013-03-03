@@ -111,11 +111,12 @@ section {
     clear: both
     }
 
-.answers p {
+.answers .right {
     float: right;
     width: 460px;
     padding-left: 20px;
-    border-left: 1px solid #eee
+    border-left: 1px solid #eee;
+    margin: 10px 0;
     }
 
 .answers p.name {

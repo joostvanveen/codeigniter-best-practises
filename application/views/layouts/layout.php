@@ -21,6 +21,7 @@
 		<ul class="nav">
 			<li><a href="<?php echo site_url(); ?>">Home</a></li>
 			<li><a href="<?php echo site_url('questions/listing'); ?>">Questions</a></li>
+			<li><?php echo $this->ion_auth->logged_in() == true ? anchor('users/logout', 'Logout') : anchor('users/login', 'Login') ?></li>
 		</ul>
 	</header>
 	<div class="main">

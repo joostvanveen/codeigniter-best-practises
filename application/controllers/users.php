@@ -7,6 +7,12 @@ class Users extends MY_Controller
         parent::__construct();
         $this->load->model('user_model');
     }
+    
+    public function logout ()
+    {
+        $this->ion_auth->logout();
+        redirect('users/login');
+    }
 
     /**
      * Login a user and redirect him to questions

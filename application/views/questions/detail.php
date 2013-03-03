@@ -1,11 +1,11 @@
 <section class="question">
-	<h2><?php echo $question->subject ?></h2>
+	<h2><?php echo escape($question->subject); ?></h2>
 	<p class="name">
-	    <?php echo $question->user->first_name ?>
-	    <?php echo $question->user->last_name ?>
-	    - <?php echo $question->created ?>
+	    <?php echo escape($question->user->first_name); ?>
+	    <?php echo escape($question->user->last_name); ?>
+	    - <?php echo escape($question->created); ?>
 	</p>
-	<p><?php echo $question->text ?></p>
+	<p><?php echo $this->parser->textileThis(escape($question->text)); ?></p>
 </section>
 
 <?php if(!empty($answers)): ?>
@@ -14,12 +14,12 @@
 	
 	<?php foreach ($answers as $answer): ?>
 		<article>
-			<p class="name">
-			    <?php echo $answer->user->first_name ?>
-        	    <?php echo $answer->user->last_name ?>
-        	    - <?php echo $answer->created ?>
+			<p class="name right">
+			    <?php echo escape($answer->user->first_name); ?>
+        	    <?php echo escape($answer->user->last_name); ?>
+        	    - <?php echo escape($answer->created); ?>
 			</p>
-			<p><?php echo $answer->text ?></p>
+			<div class="right"><?php echo $this->parser->textileThis(escape($answer->text)); ?></div>
 		</article>
 	<?php endforeach; ?>
 	
