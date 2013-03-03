@@ -31,7 +31,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data = array('subview' => 'homepage');
+	    
+	    
+	    $this->output->enable_profiler(ENVIRONMENT == 'development');	    
+	    $data = array('subview' => 'homepage');
 	    $this->load->view('layouts/layout', $data);
 	}
 }
