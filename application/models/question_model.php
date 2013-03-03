@@ -9,4 +9,11 @@ class Question_model extends MY_Model
         parent::__construct();
         $this->_database = $this->db;
     }
+    
+    public function get_with_users ()
+    {
+        $this->db->select('questions.*, users.first_name, users.last_name');
+        $this->db->join('users', 'questions.user_id=users.id');
+        return $this->get_all();
+    }
 }

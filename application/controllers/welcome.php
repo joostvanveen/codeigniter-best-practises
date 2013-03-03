@@ -29,8 +29,7 @@ class Welcome extends MY_Controller {
 	    
 	    
 	    	    
-	    $data = array('subview' => 'homepage');
-	    $this->load->view('layouts/layout', $data);
+	    
 	}
 }
 

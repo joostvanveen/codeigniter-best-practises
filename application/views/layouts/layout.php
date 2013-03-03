@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>AskAway</title>
     
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo site_url('style.css'); ?>" type="text/css" />
     
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
