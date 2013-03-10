@@ -1,4 +1,7 @@
 <?php  if (! defined('BASEPATH')) exit('No direct script access allowed');
+
+require APPPATH."third_party/MX/Loader.php";
+
 /**
  * Sparks
  *
@@ -23,7 +26,7 @@
  * @category	Loader
  * @link		http://codeigniter.com/user_guide/libraries/loader.html
  */
-class MY_Loader extends CI_Loader
+class MY_Loader extends MX_Loader
 {
     /**
      * Keep track of which sparks are loaded. This will come in handy for being
