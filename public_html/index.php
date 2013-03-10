@@ -1,6 +1,10 @@
 <?php
 
 require '../vendor/autoload.php';
+date_default_timezone_set('Europe/Amsterdam');
+if (!isset($_SERVER['REMOTE_ADDR'])) {
+    $_SERVER['REMOTE_ADDR'] = '127.0.0.1';
+}
 
 /*
  *---------------------------------------------------------------
@@ -20,8 +24,9 @@ require '../vendor/autoload.php';
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	switch ($_SERVER['HTTP_HOST']) {
-	    case 'bestpractises:8888':
+	$root = dirname(__FILE__);
+    switch ($root) {
+	    case '/Applications/MAMP/htdocs/envato_codeigniter_best_practises/public_html':
 	        $env = 'development';
 	    break;
 	    default:
