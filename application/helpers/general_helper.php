@@ -60,5 +60,6 @@ function textile_sanitize($string){
 }
 
 function escape($string){
-    return htmlspecialchars($string, ENT_QUOTES);
+    return textile_sanitize($string);
 }
+
