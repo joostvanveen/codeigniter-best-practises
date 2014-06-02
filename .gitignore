@@ -1,2 +1,3 @@
 application/cache/*
 application/logs/*
+vendor
